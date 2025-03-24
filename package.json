@@ -6,6 +6,25 @@
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IR-Banks/ir-banks-info.git"
+  },
+  "keywords": [
+    "ir banks info",
+    "ir banks logo",
+    "iran banks logo",
+    "iran banks info",
+    "verify iranian card-number",
+    "verify iranian IBAN",
+    "Banks logo",
+    "Banks image"
+  ],
+  "author": "Mohammad Norouzi <Norouzex>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IR-Banks/ir-banks-info/issues"
+  },
   "scripts": {
     "build": "rollup -c",
     "prepare": "npm run build",
