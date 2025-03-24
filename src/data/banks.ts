@@ -1,4 +1,5 @@
-const baseUrl = 'https://ir-banks-info.github.io/logos/public'
+import config from '@/config/index'
+const baseUrl = config.baseUrl
 export const bankData: Record<string, { name: string; logo: string }> = {
   '627412': { name: 'اقتصاد نوین', logo: `${baseUrl}/Eghtesad_Novin.svg` },
   '627381': { name: '(سپه) انصار', logo: `${baseUrl}/Ansar.svg` },
@@ -39,7 +40,10 @@ export const bankData: Record<string, { name: string; logo: string }> = {
   '639217': { name: 'کشاورزی', logo: `${baseUrl}/Keshavarzi.svg` },
   '505416': { name: 'گردشگری', logo: `${baseUrl}/Gardeshgari.svg` },
   '505426': { name: 'گردشگری', logo: `${baseUrl}/Gardeshgari.svg` },
-  '636795': { name: 'مرکزی', logo: `${baseUrl}/Bank_Markazi.svg` },
+  '636795': {
+    name: 'بانک مرکزی جمهوری اسلامی ایران',
+    logo: `${baseUrl}/Bank_Markazi.svg`,
+  },
   '628023': { name: 'مسکن', logo: `${baseUrl}/Maskan.svg` },
   '610433': { name: 'ملت', logo: `${baseUrl}/Mellat.svg` },
   '991975': { name: 'ملت', logo: `${baseUrl}/Mellat.svg` },
@@ -50,4 +54,6 @@ export const bankData: Record<string, { name: string; logo: string }> = {
   '505801': { name: '(سپه) موسسه اعتباری کوثر', logo: `${baseUrl}/Kosar.svg` },
   '606256': { name: 'موسسه اعتباری ملل', logo: `${baseUrl}/Melall.svg` },
   '504172': { name: 'رسالت', logo: `${baseUrl}/Resalat.svg` },
+  '507677': { name: 'موسسه نور', logo: `${baseUrl}/Noor.svg` },
+  '585947': { name: 'بانک خاورمیانه', logo: `${baseUrl}/Khavar_Mianeh.svg` },
 }

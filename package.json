@@ -1,10 +1,11 @@
 {
   "name": "ir-banks-info",
   "version": "1.0.0",
-  "description": "banks info",
+  "description": "A utility library for validating Iranian bank card numbers and IBANs, and retrieving bank details such as name and logo using IBAN or card number",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "rollup -c",
     "prepare": "npm run build",
@@ -17,7 +18,8 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tslib": "^2.8.1"
+    "tslib": "^2.8.1",
+    "vite": "^6.2.2"
   },
   "devDependencies": {
     "@rollup/plugin-babel": "^6.0.4",
@@ -28,6 +30,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "typescript": "^5.8.2",
+    "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.0.9"
   }
 }

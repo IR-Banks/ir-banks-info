@@ -1,5 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { getBankInfo } from '../src/index'
+import config from '../src/config/index'
+const baseUrl = config.baseUrl
 
 describe('getBankInfo', () => {
   it('should return correct bank info for a valid card number', () => {
@@ -9,7 +11,7 @@ describe('getBankInfo', () => {
     expect(bankInfo).toEqual(
       expect.objectContaining({
         name: 'صادرات ایران',
-        logo: 'https://ir-banks-info.github.io/logos/public/Saderat.svg',
+        logo: baseUrl + '/Saderat.svg',
       })
     )
   })
@@ -21,7 +23,7 @@ describe('getBankInfo', () => {
     expect(bankInfo).toEqual(
       expect.objectContaining({
         name: 'صادرات ایران',
-        logo: 'https://ir-banks-info.github.io/logos/public/Saderat.svg',
+        logo: baseUrl + '/Saderat.svg',
       })
     )
   })

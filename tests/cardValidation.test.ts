@@ -1,5 +1,5 @@
 import { it, expect } from 'vitest'
-import { verifyCardNumber } from '../src/verify-cardNumber'
+import { verifyCardNumber } from '../src/index'
 
 it('validate cardNumber', () => {
   expect(verifyCardNumber(6037697456637302)).toBeTruthy()
