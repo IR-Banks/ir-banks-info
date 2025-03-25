@@ -35,20 +35,20 @@
     "prepublishOnly": "npm test"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "tslib": "^2.8.1",
-    "vite": "^6.2.2"
+    "tslib": "^2.8.1"
   },
   "devDependencies": {
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.3",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-typescript": "^12.1.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "rollup": "^4.36.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "typescript": "^5.8.2",
+    "vite": "^6.2.3",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.0.9"
   }
