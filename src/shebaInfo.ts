@@ -1,8 +1,4 @@
 /**
- * @description Retrieves bank information based on a Sheba (IBAN) code.
- * @param {string} shebaCode  The Sheba code (IBAN). It can start with "IR" or be provided without it.
- * @returns {getBankInfoWithShebaType | null} The bank information or null if invalid.
- *
  * @license IT License (MIT-style)
  * Copyright (c) 2017 Ali Torki
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -17,6 +13,12 @@ export const shebaPattern = /IR[0-9]{24}/
 
 export const shebaPatternCode = /IR[0-9]{2}([0-9]{3})[0-9]{19}/
 
+/**
+ * @description Retrieves bank information based on a Sheba (IBAN) code.
+ * @param {string} shebaCode  The Sheba code (IBAN). It can start with "IR" or be provided without it.
+ * @returns {{getBankInfoWithShebaType | null}} The bank information or null if invalid.
+ *
+ */
 export function getBankInfoWithSheba(
   shebaCode: string
 ): getBankInfoWithShebaType | null {

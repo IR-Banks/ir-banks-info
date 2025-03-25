@@ -5,7 +5,7 @@ const baseUrl = config.baseUrl
 
 describe('getBankInfo', () => {
   it('should return correct bank info for a valid card number', () => {
-    const cardNumber = 6037697456637302
+    const cardNumber = '6037697456637302'
     const bankInfo = getBankInfoWithCardNumber(cardNumber)
     expect(typeof bankInfo).toBe('object')
     expect(bankInfo).toEqual(
@@ -17,7 +17,7 @@ describe('getBankInfo', () => {
   })
 
   it('should return info for fewer than 6 digits', () => {
-    const cardNumber = 603769
+    const cardNumber = '603769'
     const bankInfo = getBankInfoWithCardNumber(cardNumber)
     expect(typeof bankInfo).toBe('object')
     expect(bankInfo).toEqual(
@@ -29,13 +29,13 @@ describe('getBankInfo', () => {
   })
 
   it('should handle invalid card numbers', () => {
-    const cardNumber = 1234567891234569
+    const cardNumber = '1234567891234569'
     const bankInfo = getBankInfoWithCardNumber(cardNumber)
     expect(bankInfo).toBeNull()
   })
 
   it('should handle fewer than 6 digits', () => {
-    const cardNumber = 60376
+    const cardNumber = '60376'
     const bankInfo = getBankInfoWithCardNumber(cardNumber)
     expect(bankInfo).toBeNull()
   })
