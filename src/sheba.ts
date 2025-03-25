@@ -1,4 +1,9 @@
+import { shebaCodes, getShebaInfoType } from './data/sheba'
+
 /**
+ * @param {string} shebaCode
+ * @returns {getShebaInfoType | null}
+ *
  * @license IT License (MIT-style)
  * Copyright (c) 2017 Ali Torki
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -7,13 +12,11 @@
  * @source https://github.com/persian-tools/persian-tools
  */
 
-import { shebaCodes, ShebaInfo } from '@/data/sheba'
-
 export const shebaPattern = /IR[0-9]{24}/
 
 export const shebaPatternCode = /IR[0-9]{2}([0-9]{3})[0-9]{19}/
 
-export function getShebaInfo(shebaCode: string): ShebaInfo | null {
+export function getShebaInfo(shebaCode: string): getShebaInfoType | null {
   if (!isShebaValid(shebaCode)) {
     return null
   }

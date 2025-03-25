@@ -1,5 +1,5 @@
-import config from '@/config/index'
-export interface ShebaInfo {
+import config from '../config/index'
+export interface getShebaInfoType {
   name: string
   code: string
   nickname: string
@@ -8,7 +8,7 @@ export interface ShebaInfo {
 }
 
 const baseUrl = config.baseUrl
-export type ShebaCodes = Record<string, ShebaInfo>
+export type ShebaCodes = Record<string, getShebaInfoType>
 export const shebaCodes: ShebaCodes = {
   10: {
     code: '010',

@@ -1,17 +1,16 @@
-import { bankData } from '@/data/banks'
+import { bankData } from './data/banks'
 
 /**
- * Get bank info based on card number.
- * @param cardNumber - The bank card number.
- * @returns BankInfo or null if not found.
+ * Get bank info based on the first 6 digits of a card number..
+ * @param {number} cardNumber - A card number with at least 6 digits.
+ * @returns {getBankInfoType | null} - The bank information or null if not found.
  */
 
-interface getBankInfoType {
+export interface getBankInfoType {
   name: string
   logo: string
 }
-export function getBankInfo(cardNumber: number): getBankInfoType {
+export function getBankInfo(cardNumber: number): getBankInfoType | null {
   const cardNumberCode = cardNumber.toString().substring(0, 6)
-  const bankInfo = bankData[cardNumberCode]
-  return bankInfo
+  return bankData[cardNumberCode] || null
 }

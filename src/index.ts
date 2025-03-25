@@ -1,5 +1,4 @@
-import { getBankInfo } from '@/bank-info'
-import { verifyCardNumber } from '@/verify-cardNumber'
-import { isShebaValid, getShebaInfo } from '@/sheba'
-
-export { getBankInfo, verifyCardNumber, isShebaValid, getShebaInfo }
+export * from './bank-info'
+export * from './verify-cardNumber'
+export * from './sheba'
+export * from './data/sheba'

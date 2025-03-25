@@ -10,7 +10,7 @@ describe('getBankInfo', () => {
     expect(typeof bankInfo).toBe('object')
     expect(bankInfo).toEqual(
       expect.objectContaining({
-        name: 'صادرات ایران',
+        name: 'بانک صادرات ایران',
         logo: baseUrl + '/Saderat.svg',
       })
     )
@@ -22,7 +22,7 @@ describe('getBankInfo', () => {
     expect(typeof bankInfo).toBe('object')
     expect(bankInfo).toEqual(
       expect.objectContaining({
-        name: 'صادرات ایران',
+        name: 'بانک صادرات ایران',
         logo: baseUrl + '/Saderat.svg',
       })
     )
@@ -31,12 +31,12 @@ describe('getBankInfo', () => {
   it('should handle invalid card numbers', () => {
     const cardNumber = 1234567891234569
     const bankInfo = getBankInfo(cardNumber)
-    expect(bankInfo).toBeUndefined()
+    expect(bankInfo).toBeNull()
   })
 
   it('should handle fewer than 6 digits', () => {
     const cardNumber = 60376
     const bankInfo = getBankInfo(cardNumber)
-    expect(bankInfo).toBeUndefined()
+    expect(bankInfo).toBeNull()
   })
 })

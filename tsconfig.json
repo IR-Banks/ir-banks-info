@@ -8,10 +8,8 @@
     "strict": true,
     "jsx": "react-jsx",
     "esModuleInterop": true,
-    "baseUrl": "./",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "emitDeclarationOnly": true,
+    "moduleResolution": "node"
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist", "test"]
