@@ -1,0 +1,6 @@
+src/
+tests/
+vitest.config.js
+rollup.config.mjs
+tsconfig.json
+.gitignore

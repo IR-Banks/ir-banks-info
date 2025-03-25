@@ -10,6 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/IR-Banks/ir-banks-info.git"
   },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "ir banks info",
     "ir banks logo",
