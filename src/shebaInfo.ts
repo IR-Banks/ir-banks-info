@@ -1,8 +1,7 @@
-import { shebaCodes, getShebaInfoType } from './data/sheba'
-
 /**
- * @param {string} shebaCode
- * @returns {getShebaInfoType | null}
+ * @description Retrieves bank information based on a Sheba (IBAN) code.
+ * @param {string} shebaCode  The Sheba code (IBAN). It can start with "IR" or be provided without it.
+ * @returns {getBankInfoWithShebaType | null} The bank information or null if invalid.
  *
  * @license IT License (MIT-style)
  * Copyright (c) 2017 Ali Torki
@@ -12,11 +11,15 @@ import { shebaCodes, getShebaInfoType } from './data/sheba'
  * @source https://github.com/persian-tools/persian-tools
  */
 
+import { shebaCodes, getBankInfoWithShebaType } from './data/sheba'
+
 export const shebaPattern = /IR[0-9]{24}/
 
 export const shebaPatternCode = /IR[0-9]{2}([0-9]{3})[0-9]{19}/
 
-export function getShebaInfo(shebaCode: string): getShebaInfoType | null {
+export function getBankInfoWithSheba(
+  shebaCode: string
+): getBankInfoWithShebaType | null {
   if (!isShebaValid(shebaCode)) {
     return null
   }

@@ -1,11 +1,7 @@
 /**
  * @description  Validates an Iranian bank card number using the Luhn algorithm.
- *
- * @category Bank account
- * @public
- * @method verifyCardNumber
- * @param {number} digits - Card number (must be 16 digits)
- * @return {boolean} - Returns `true` if valid, `false` if invalid, and `undefined` for empty input.
+ * @param {number} digits - The bank card number. Must be exactly 16 digits long.
+ * @return {boolean} - Returns `true` if valid, `false`
  *
  * @license IT License (MIT-style)
  * Copyright (c) 2017 Ali Torki
@@ -14,8 +10,8 @@
  *
  * @source https://github.com/persian-tools/persian-tools
  */
-export function verifyCardNumber(digits: number): boolean | undefined {
-  if (!digits) return
+export function isCardNumberValid(digits: number): boolean {
+  if (!digits) return false
   const digitsResult = String(digits)
 
   const length = digitsResult.length
