@@ -16,7 +16,7 @@
 
 <div align="center">
 	<p align="center">
-		<img src="./images/demo.png" width="200" alt="PersianTools logo" />
+		<img src="./images/demo.jpg" width="200" alt="PersianTools logo" />
 	</p>
 	<a align="center" href="https://irbanks.norouzy.ir/" target="_blank">LIVE DEMO</a>
 
@@ -31,7 +31,7 @@
 
 ### Install
 
-Install the IRBanksInfo package in your project using <a href="https://yarnpkg.com/en/" target="_blank">yarn</a> <em>or</em> <a href="https://docs.npmjs.com/cli/npm" target="_blank">npm</a>.
+Install the ir-banks-info package in your project using <a href="https://yarnpkg.com/en/" target="_blank">yarn</a> <em>or</em> <a href="https://docs.npmjs.com/cli/npm" target="_blank">npm</a>.
 
 ```bash
 $ npm install --save ir-banks-info
