@@ -1,4 +1,5 @@
 src/
+images/
 tests/
 vitest.config.js
 rollup.config.mjs
