@@ -4,7 +4,7 @@ export interface getBankInfoWithShebaType {
   code: string
   nickname: string
   persianName: string
-  logo: string | null
+  logo: string
 }
 
 const baseUrl = config.baseUrl
