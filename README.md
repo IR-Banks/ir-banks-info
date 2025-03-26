@@ -16,7 +16,7 @@
 
 <div align="center">
 	<p align="center">
-		<img src="./images/demo.jpg" width="200" alt="PersianTools logo" />
+		<img src="./images/demo.jpg" alt="PersianTools logo" />
 	</p>
 	<a align="center" href="https://irbanks.norouzy.ir/" target="_blank">LIVE DEMO</a>
 
