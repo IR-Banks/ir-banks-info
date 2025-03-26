@@ -1,4 +1,16 @@
+<div align="center">
+	<p align="center">
+		<img src="./images/logo.png" width="200" alt="PersianTools logo" />
+	</p>
+	<h1 align="center">Iranian Banks Information</h1>
 
+![codecov](https://img.shields.io/npm/v/ir-banks-info)
+![GitHub license](https://img.shields.io/github/license/ir-banks/ir-banks-info)
+![npm downloads](https://img.shields.io/npm/d18m/ir-banks-info.svg)
+![GitHub Stars](https://img.shields.io/github/stars/ir-banks/ir-banks-info?style=social)
+
+</div>
+<hr />
 
 ## Features
 
