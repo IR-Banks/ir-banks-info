@@ -1,7 +1,8 @@
 {
   "name": "ir-banks-info",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A utility library for validating Iranian bank card numbers and IBANs, and retrieving bank details such as name and logo using IBAN or card number",
+  "main": "dist/index.es.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "type": "module",
