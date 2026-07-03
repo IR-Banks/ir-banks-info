@@ -1,7 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { getBankInfoWithSheba } from '../src/index'
-import config from '../src/config/index'
-const baseUrl = config.baseUrl
+
 describe('getShebaInfo', () => {
   it('should return correct bank info for a valid sheba', () => {
     const shebaInfo = getBankInfoWithSheba('IR740190000000306872721006')
@@ -12,7 +11,7 @@ describe('getShebaInfo', () => {
         nickname: 'saderat',
         name: 'Saderat Bank',
         persianName: 'بانک صادرات ایران',
-        logo: baseUrl + '/Saderat.svg',
+        logo: expect.stringMatching(/^data:image\/svg\+xml,/),
       })
     )
   })
@@ -25,7 +24,7 @@ describe('getShebaInfo', () => {
         nickname: 'resalat',
         name: 'Resalat Bank',
         persianName: 'بانک قرض الحسنه رسالت',
-        logo: baseUrl + '/Resalat.svg',
+        logo: expect.stringMatching(/^data:image\/svg\+xml,/),
       })
     )
   })

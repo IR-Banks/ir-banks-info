@@ -43,6 +43,8 @@ or
 $ yarn add ir-banks-info
 ```
 
+> Note: `ir-banks-info` returns the bank logo as an inline **data URI** string (`data:image/svg+xml,...`), not a file path or React component. It renders directly in an `<img src={...}>` with no extra setup — no static files to serve, and it works offline.
+
 ## Usage
 
 ### Iranian Bank (Name & Logo) from Sheba(IBAN)
@@ -59,7 +61,7 @@ output:
     nickname: 'saderat',
     name: 'Saderat Bank',
     persianName: 'بانک صادرات ایران',
-    logo: 'https://ir-banks.github.io/logos/banks/Saderat.svg',
+    logo: 'data:image/svg+xml,%3Csvg%20...',  // inline SVG data URI
 }
 
 */
@@ -80,7 +82,7 @@ getBankInfoWithCardNumber('6037697456637302')
 output:
 {
     name: 'بانک صادرات ایران',
-    logo: 'https://ir-banks.github.io/logos/banks/Saderat.svg',
+    logo: 'data:image/svg+xml,%3Csvg%20...',  // inline SVG data URI
 }
 
 */

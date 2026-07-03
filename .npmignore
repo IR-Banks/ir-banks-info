@@ -5,3 +5,5 @@ vitest.config.js
 rollup.config.mjs
 tsconfig.json
 .gitignore
+# Exclude source maps — dev tooling only, not needed by consumers.
+*.map
